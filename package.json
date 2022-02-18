@@ -1,0 +1,27 @@
+{
+  "name": "breakingtherecords",
+  "version": "1.0.0",
+  "description": "Maria plays college basketball and wants to go pro. Each season she maintains a record of her play. She tabulates the number of times she breaks her season record for most points and least points in a game. Points scored in the first game establish her record for the season, and she begins counting from there. Given the scores for a season, determine the number of times Maria breaks her records for most and least points scored during the season.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diegomdevs/breakingTheRecords.git"
+  },
+  "keywords": [
+    "typescript",
+    "hackerrank",
+    "solution"
+  ],
+  "author": "diegomdevs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/diegomdevs/breakingTheRecords/issues"
+  },
+  "homepage": "https://github.com/diegomdevs/breakingTheRecords#readme",
+  "dependencies": {
+    "typescript": "^4.5.5"
+  }
+}
