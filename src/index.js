@@ -1,22 +1,18 @@
-function breakingRecords(scores) {
+function b(scores) {
     var hs = 0;
     var ls = 0;
-    var current_value = 0;
-    var highest_value = 0;
-    var lowest_value = 0;
-    for (var i = 0; i < scores.length; i++) {
-        current_value = scores[i];
-        if (i === 0)
-            lowest_value = current_value;
-        if (current_value < scores[i + 1]) {
-            highest_value = scores[i + 1];
+    var highest_value = scores[0];
+    var lowest_value = scores[0];
+    scores.forEach(function (current_value) {
+        if (current_value > highest_value) {
+            highest_value = current_value;
             hs++;
         }
-        if (scores[i + 1] < lowest_value) {
-            lowest_value = scores[i + 1];
+        if (lowest_value > current_value) {
+            lowest_value = current_value;
             ls++;
         }
-    }
-    return [hs - 1, ls];
+    });
+    return [hs, ls];
 }
-console.log(breakingRecords([12, 24, 10, 24]));
+console.log(b([3, 4, 21, 36, 10, 28, 35, 5, 24, 42]));

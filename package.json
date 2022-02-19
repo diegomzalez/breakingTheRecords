@@ -23,5 +23,8 @@
   "homepage": "https://github.com/diegomdevs/breakingTheRecords#readme",
   "dependencies": {
     "typescript": "^4.5.5"
+  },
+  "devDependencies": {
+    "ts-node": "^10.5.0"
   }
 }
